@@ -1,5 +1,5 @@
 node{
-stage(){
+stage('checkout'){
     
     Checkout([ 
     $class:'GitSCM',

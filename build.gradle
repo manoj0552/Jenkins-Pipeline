@@ -31,5 +31,5 @@ dependencies {
 	
 }
 
-sonarqube -Dsonar.host.url=$sonar.host.url
+sonarqube -Dsonar.host.url=http://localhost:9000
 

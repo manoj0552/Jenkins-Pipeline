@@ -11,7 +11,7 @@ stage('checkout'){
  }
  
  stage('package'){
-     bat 'gradle build'
+     bat './gradlew build'
      
  }
 

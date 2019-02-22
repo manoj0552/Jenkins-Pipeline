@@ -12,7 +12,8 @@ stage('checkout'){
  
  stage('package'){
      bat './gradlew build'
-     bat './gradlew sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.verbose=true'
+     bat './gradlew task'
+     bat './gradlew --scan sonarqube  -Dsonar.verbose=true'
      
  }
 

@@ -2,12 +2,7 @@
 
 string branchName
 
-if(!env.BRANCH_NAME){
-    branchName = 'master'        
-}
-else{
-    branchName = env.branchName    
-}
+
 
 library identifier: "SharedLibrary@master",
 		retriever: modrenSCM([ 

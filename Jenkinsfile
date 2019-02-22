@@ -1,7 +1,15 @@
 node{
 stage('checkout'){
     
-    checkout scm
+    node {
+    checkout([
+         $class: 'GitSCM',
+         branches: scm.branches,
+         doGenerateSubmoduleConfigurations: scm.doGenerateSubmoduleConfigurations,
+         extensions: scm.extensions,
+         userRemoteConfigs: [ [ credentialsId:'Manoj2', url:'https://github.com/manoj0552/Jenkins-Pipeline.git' ] ]
+    ])
+ }
 }
 
     

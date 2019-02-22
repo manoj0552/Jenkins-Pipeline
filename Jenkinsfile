@@ -19,8 +19,8 @@ library identifier: "SharedLibrary@master",
 	 agent none
  	    stages {
     	     stage('checkout') {
-    	     
-     	    checkout([
+    	     steps {
+    	     checkout([
             $class: 'GitSCM',
             branches: scm.branches,
             extensions: scm.extensions + [[$class: 'LocalBranch'], [$class: 'WipeWorkspace']],
@@ -28,6 +28,8 @@ library identifier: "SharedLibrary@master",
             doGenerateSubmoduleConfigurations: false
             
         ])
+     	        
+     	    }     	    
 
      	    }
 

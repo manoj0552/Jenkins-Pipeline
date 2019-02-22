@@ -1,14 +1,4 @@
-#!/usr/bin/groovy
 
-string branchName
-
-
-
-library identifier: "SharedLibrary@master",
-		retriever: modrenSCM([ 
-		$class: 'GitSCMSource',
-		remote: 'https://github.com/manoj0552/gradle-simple.git'	
-	 ])
 	 
 	 pipeline {
 	 agent none

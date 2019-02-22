@@ -11,7 +11,7 @@ stage('checkout'){
  }
  
  stage('package'){
-     sh 'gradle build'
+     bash 'gradle build'
      
  }
 

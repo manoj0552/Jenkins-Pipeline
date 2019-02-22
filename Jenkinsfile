@@ -13,7 +13,9 @@ stage('checkout'){
  stage('package'){
      bat './gradlew build'
      bat './gradlew task'
-     bat './gradlew --scan sonarqube  -Dsonar.verbose=true'
+      withSonarQubeEnv('SonarQubeServer') {
+     bat './gradlew --info sonarqube'
+     }
      
  }
 

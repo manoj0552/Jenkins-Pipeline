@@ -31,8 +31,4 @@ dependencies {
 	
 }
 
-sonarqube {
-  properties {
-    property "sonar.host.url", "http://localhost:9000"
-  }
-}
+sonarqube -Dsonar.host.url='http://localhost:9000'

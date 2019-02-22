@@ -9,6 +9,12 @@ stage('checkout'){
          userRemoteConfigs: [ [ credentialsId:'Manoj2', url:'https://github.com/manoj0552/Jenkins-Pipeline.git' ] ]
     ])
  }
+ 
+ stage('package'){
+     bh 'gradle build'
+     
+ }
+
 }
 
     

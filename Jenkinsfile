@@ -11,8 +11,7 @@ stage('checkout'){
  }
  
  stage('package'){
-     bat './gradlew build'
-     bat './gradlew task'
+     bat './gradlew build'     
       withSonarQubeEnv('SonarQubeServer') {
      bat './gradlew --info sonarqube'
      }

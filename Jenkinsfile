@@ -11,7 +11,7 @@ stage('checkout'){
  }
  
  stage('package'){
-     bat './gradlew build'
+     bat './gradlew build sonarqube'
      
  }
 

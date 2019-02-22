@@ -27,10 +27,12 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
+	classpath 'org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:2.5'
+	
 }
 
 sonarqube {
-	properties {
-		property 'sonar.projectName', 'Example of SonarQube Scanner for Gradle Usage'
-	}
+  properties {
+    property "sonar.host.url", "http://localhost:9000"
+  }
 }

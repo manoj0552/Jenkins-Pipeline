@@ -12,9 +12,7 @@ stage('checkout'){
  
  stage('package'){
      bat './gradlew build'     
-      withSonarQubeEnv('SonarQubeServer') {
-     bat './gradlew --info sonarqube'
-     }
+      
      
  }
 

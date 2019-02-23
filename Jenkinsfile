@@ -13,7 +13,7 @@ stage('checkout'){
  stage('package'){
  
      bat './gradlew build' 
-     bat './gradlew sonarqube'      
+          
      bat './gradlew uploadArchives'
      
  } 

@@ -31,6 +31,6 @@ dependencies {
 	
 }
 
-sonarqube{
+task sonarqube {
  skipProject = 'true'
 }

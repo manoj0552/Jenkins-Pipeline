@@ -31,6 +31,17 @@ dependencies {
 	
 }
 
+project.group = 'nkse-panel-security'
+
+uploadArchives {
+   repositories {
+	   mavenDeployer {
+		 repository(url: "file:///G:/Maven/m2/repository/")
+	   }
+   }
+}
+
+
 task sonarqube {
  skipProject = 'true'
 }

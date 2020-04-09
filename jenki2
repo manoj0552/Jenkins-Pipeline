@@ -2,3 +2,18 @@ fagaslasca
 added stage branch and testing
 
 adding a new file to to the javascript.
+
+class HelloMessage extends React.Component {
+  render() {
+    return (
+      <div>
+        Hello {this.props.name}
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <HelloMessage name="Taylor" />,
+  document.getElementById('hello-example')
+);
